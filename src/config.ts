@@ -1,6 +1,6 @@
 import cors, { CorsOptions } from "cors";
 
 export const config: CorsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://peaceful-golick-5beb5b.netlify.app/",
   credentials: true,
 };

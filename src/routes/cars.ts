@@ -3,7 +3,7 @@ import { Router } from "express";
 const router = Router();
 import { cars, createCars, createService } from "../Controllers/carController";
 
-router.get("/home", cars);
+router.get("/", cars);
 router.post("/create", createCars);
 router.post("/service", createService);
 export default router;
