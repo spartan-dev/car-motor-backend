@@ -17,7 +17,6 @@ const mongooseOptions: ConnectionOptions = {
   useCreateIndex: true,
   useFindAndModify: false,
 };
-console.log(typeof mongoConnect);
 mongoose
   .connect(mongoConnect, mongooseOptions)
   .then(() => {
@@ -25,5 +24,6 @@ mongoose
     app.listen(PORT, () => console.log(`Runing free 🔥 on port ${PORT}`));
   })
   .catch((error) => console.log(`Hay un error en la conexion : ${error}`));
+
 //routes
 app.use(carRoutes);
